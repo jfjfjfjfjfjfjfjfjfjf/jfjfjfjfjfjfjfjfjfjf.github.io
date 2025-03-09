@@ -1,0 +1,1197 @@
+@font-face {
+    font-display: swap;
+    font-family:'Visby cf l';
+    font-style:normal;
+    font-weight: normal;
+     src: url('../fonts/VisbyCF-Light.woff') format('woff');
+}
+@font-face {
+    font-display: swap;
+    font-family:'Visby cf h';
+    font-style:normal;
+    font-weight: normal;
+     src: url('../fonts/VisbyCF-Heavy.woff') format('woff');
+}
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* poppins-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v22-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* poppins-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v22-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #170033;
+}
+.wrapper{
+    max-width: 1350px;
+    margin: 0 auto;
+}
+.wrapper1{
+    max-width: 1635px;
+    margin: 0 auto;
+}
+
+/* header style start */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    transition: .5s linear;
+    z-index: 999;
+}
+.header_active{
+    background: white;
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 44px;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header_item{
+    margin-right: 45px;
+}
+.header_item:last-child{
+    margin-right: 0;
+}
+.header_link{
+    font-family: 'Visby cf l';    
+    font-size: 18px;
+    line-height: 28px;
+    color: #170033;
+    text-decoration: none;
+}
+.header_link:hover, .header_link:focus, .header_link:active{
+    background: linear-gradient(45deg, #8A35F2 33%, #BC4BDF 67%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* header style end */
+
+/* intro style start */
+.intro{
+    
+    background: url(../img/introbg.jpg) no-repeat center;
+    background-size: cover;
+}
+.intro_cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.intro_welcome{
+    padding-top: 270px;
+    max-width: 267px;
+    font-family: 'Visby cf h';
+    font-size: 20px;
+    line-height: 34px;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+.intro_title{
+    max-width: 645px;
+    font-family: 'Visby cf h';
+    font-size: 60px;
+    line-height: 78px;
+    color: #170033;
+}
+.intro_title-grad{
+    max-width: 645px;
+    font-family: 'Visby cf h';
+    font-size: 60px;
+    line-height: 78px;
+    background: linear-gradient(45deg, #8A35F2 33%, #BC4BDF 67%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.intro_subtitle{
+    max-width: 645px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+    margin-bottom: 35px;
+}
+.lets{
+    margin-right: 20px;
+}
+.lets:hover{
+    opacity: 0.75;
+}
+.watch:hover{
+    opacity: 0.75;
+}
+.intro_form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.intro_users{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 174px;
+}
+.users:hover{
+    opacity: 0.75;
+}
+.intro_picture{
+    position: absolute;
+    margin-left: 660px;
+    margin-top: 164px;
+
+}
+.intro_box2{
+    background: url(../img/intropicture.png);
+    width: 719px;
+    height: 799px;
+    margin-top: 164px;
+}
+.intro_block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    background-color: #170033;
+}
+.brands{
+    padding-top: 50px;
+    margin-right: 126px;
+}
+/* intro style end */
+
+/*about style start*/
+.about{
+    margin-bottom: 20px;
+}
+.about_welcome{
+    padding-top: 150px;
+    max-width: 166px;
+    font-family: 'Visby cf h';
+    font-size: 20px;
+    line-height: 34px;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+.about_cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    margin-bottom: 60px;
+}
+.about_title{
+    max-width: 628px;
+    font-family: 'Visby cf h';
+    font-size: 50px;
+    line-height: 62px;
+    color: #170033;
+}
+.about_title-grad{
+    max-width: 628px;
+    font-family: 'Visby cf h';
+    font-size: 50px;
+    line-height: 62px;
+    background: linear-gradient(45deg, #8A35F2 33%, #BC4BDF 67%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about_subtitle{
+    padding-top: 220px;
+    max-width: 662px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+}
+.about_menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 150px;
+}
+.boxmenu1{
+    background: url(../img/info-box-1.png);    
+    width: 430px;
+    height: 455px;
+}
+.boxmenu2{
+    background: url(../img/info-box-2.png);    
+    width: 430px;
+    height: 455px;
+}
+.boxmenu3{
+    background: url(../img/info-box-3.png);    
+    width: 430px;
+    height: 455px;
+}
+
+.infobox1{
+    padding-top: 150px;
+    margin-left: 50px;
+    max-width: 250px;
+    font-family: 'Visby cf h';
+    font-size: 28px;
+    line-height: 38px;
+    color: #170033;
+}
+.infobox2{
+    padding-top: 150px;
+    margin-left: 50px;
+    max-width: 187px;
+    font-family: 'Visby cf h';
+    font-size: 28px;
+    line-height: 38px;
+    color: #170033;
+}
+.infobox3{
+    padding-top: 150px;
+    margin-left: 50px;
+    max-width: 221px;
+    font-family: 'Visby cf h';
+    font-size: 28px;
+    line-height: 38px;
+    color: #170033;
+}
+.infobox1-grad{
+    margin-left: 50px;
+    max-width: 250px;
+    font-family: 'Visby cf h';
+    font-size: 28px;
+    line-height: 38px;
+    background: linear-gradient(45deg, #8A35F2 33%, #BC4BDF 67%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.infobox2-grad{
+    margin-left: 50px;
+    max-width: 250px;
+    font-family: 'Visby cf h';
+    font-size: 28px;
+    line-height: 38px;
+    background: linear-gradient(45deg, #8A35F2 33%, #BC4BDF 67%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.infobox3-grad{
+    margin-left: 50px;
+    max-width: 221px;
+    font-family: 'Visby cf h';
+    font-size: 28px;
+    line-height: 38px;
+    background: linear-gradient(45deg, #8A35F2 33%, #BC4BDF 67%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.infobox1_sub{
+    margin-left: 50px;
+    max-width: 300px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #170033;
+    margin-bottom: 20px;
+}
+.infobox2_sub{
+    margin-left: 50px;
+    max-width: 330px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #170033;
+    margin-bottom: 20px;
+}
+.infobox3_sub{
+    margin-left: 50px;
+    max-width: 330px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #170033;
+    margin-bottom: 20px;
+}
+.infbut{
+    text-decoration: none;
+    margin-left: 50px;
+    max-width: 127px;
+    font-family: 'Visby cf h';
+    font-size: 28px;
+    line-height: 38px;
+    background: linear-gradient(45deg, #8A35F2 33%, #BC4BDF 67%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.infbut:hover{
+    opacity: 0.75;
+}
+/*about style end*/
+
+/* product style start*/
+.product_cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.prodbox2{
+    margin-top: 152px;
+    margin-bottom: 10px;
+}
+.product_welcome{
+    max-width: 204px;
+    font-family: 'Visby cf h';
+    font-size: 20px;
+    line-height: 34px;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.product_title{
+    max-width: 595px;
+    font-family: 'Visby cf h';
+    font-size: 50px;
+    line-height: 62px;
+    color: #170033;
+}
+.product_title-grad{
+    max-width: 595px;
+    font-family: 'Visby cf h';
+    font-size: 50px;
+    line-height: 62px;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+.product_subtitle1{
+    max-width: 595px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+    margin-bottom: 10px;
+}
+.product_subtitle2{
+    max-width: 595px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+}
+.product_subtitle2-bold{
+    max-width: 595px;
+    font-family: 'Visby cf h';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+}
+.generate_form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.generate_cont{
+    width: 595px;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 28px;
+}
+.generate_form-field{
+    width: 358px;
+    opacity: none;
+    margin-top: 17px;
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Visby cf l';
+    font-size: 14px;
+    line-height: 22px;
+    color: #170033;
+}
+.generate_form-field::placeholder{
+    margin-bottom: 17px;
+    color: #170033;
+}
+.button_generate{
+    margin-left: 14px;
+    background: linear-gradient(to right, #8A35F2, #BC4BDF);
+    color: white;
+    border: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Visby cf h';
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.button_generate:hover{
+    opacity: 0.75;
+}
+.generate_surprise{
+    font-family: 'Visby cf h';
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.generate_surprise:hover{
+    opacity: 0.75;
+}
+/* product style end*/
+
+/* resources style start*/
+.resources{
+    margin-top: 150px;
+}
+.resources_title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.resources_welcome{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 212px;
+    font-family: 'Visby cf h'; 
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+.resources_h1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 980px;
+    font-family: 'Visby cf h';  
+    font-size: 58px;
+    line-height: 62px;
+    text-align: center;
+    color: #170033;
+    margin-right: 10px;
+}
+.resources_h1-grad{
+    max-width: 980px;
+    font-family: 'Visby cf h';  
+    font-size: 58px;
+    line-height: 62px;
+    text-align: center;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.resources_subtitle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.resources_p{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 780px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #170033;
+}
+.resources_cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+}
+.resources_box1{
+    margin-top: 90px;
+}
+.resources_info1-1{
+    display: flex;
+}
+.resources_info1-2{
+    display: flex;
+}
+.resources_info1-3{
+    display: flex;
+}
+.resources_info1{
+    max-width: 329px;
+    font-family: 'Visby cf h'; 
+    font-size: 28px;
+    line-height: 38px;
+    color: #170033;
+}
+.resources_info1-grad{
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.resources_info1-pict{
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.resources_info2-pict{
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.resources_info3-pict{
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.resources_subinfo1{
+    max-width: 645px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+    margin-bottom: 45px;
+}
+.resources_info2{
+    max-width: 217px;
+    font-family: 'Visby cf h'; 
+    font-size: 28px;
+    line-height: 38px;
+    color: #170033;
+}
+.resources_box2{
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+/* resources style end*/
+
+/* blog style start*/
+.blog_welcome{
+    max-width: 101px;
+    font-family: 'Visby cf l';
+    font-size: 22px;
+    line-height: 34px;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.blog_info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog_title{
+    max-width: 647px;
+    font-family: 'Visby cf h';
+    font-size: 48px;
+    line-height: 62px;
+    color: #170033;
+    margin-right: 60px;
+}
+.blog_title-grad{
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.blog_subtitle{
+    margin-top: 30px;
+    max-width: 464px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+    margin-right: 64px;
+}
+.blog_left{
+    margin-top: 30px;
+    margin-right: 15px;
+}
+.blog_right{
+    margin-top: 30px;
+}
+.blog_left-b:hover{
+    opacity: 0.75;
+}
+.blog_right-b:hover{
+    opacity: 0.75;
+}
+.blog_cont1{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.blog_cont2{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.blog_box1{
+    background:url(../img/blogimg1.png) ;
+    width: 430px;
+    height: 530px;
+}
+.blog_box1-h1{
+    margin-top: 458px;
+    margin-left: 35px;
+    max-width: 150px;
+    font-family: 'Visby cf h';
+    font-size: 30px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.blog_box2{
+    background: url(../img/blogimg2.png);
+    width: 430px;
+    height: 530px;
+}
+.blog_box2-h1{
+    margin-top: 458px;
+    margin-left: 35px;
+    max-width: 224px;
+    font-family: 'Visby cf h';
+    font-size: 30px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.blog_box3{
+    background: url(../img/blogimg3.png);
+    width: 430px;
+    height: 530px;
+}
+.blog_box3-h1{
+    margin-top: 458px;
+    margin-left: 35px;
+    max-width: 230px;
+    font-family: 'Visby cf h';
+    font-size: 30px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.blog_box4{
+    background: url(../img/blogimg4.png);
+    width: 575px;
+    height: 530px;
+}
+.blog_box4-h1{
+    margin-top: 458px;
+    margin-left: 35px;
+    max-width: 254px;
+    font-family: 'Visby cf h';
+    font-size: 30px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.blog_box5{
+    background: url(../img/blogimg5.png);
+    width: 745px;
+    height: 530px;
+}
+.blog_box5-h1{
+    margin-top: 458px;
+    margin-left: 35px;
+    max-width: 280px;
+    font-family: 'Visby cf h';
+    font-size: 30px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+/* blog style end*/
+
+/* answers style start*/
+.answers_title{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 15px;
+}
+.answers_welcome{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 285px;
+    font-family: 'Visby cf h'; 
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+.answers_h1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 980px;
+    font-family: 'Visby cf h';  
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    color: #170033;
+    margin-right: 10px;
+}
+.answers_p{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 670px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #170033;
+}
+.answers_cont{
+    margin-top: 60px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.answers_box1{
+    margin-top: 45px;
+}
+.accordion {
+    margin-bottom: 30px;
+    max-width: 660px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 15px;
+}
+
+.accordion-button {
+    font-family: 'Visby cf l';
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    color: #170033;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.accordion-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-content {
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+    border-radius: 15px;
+    padding: 15px;
+    display: none;
+    overflow: hidden;
+    
+    
+}
+/* answers style end*/
+
+/* price style start*/
+.price_cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.price_box1{
+    margin-top: 70px;
+}
+.price_welcome{
+    max-width: 131px;
+    font-family: 'Visby cf h';
+    font-size: 20px;
+    line-height: 34px;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.price_title{
+    margin-top: 10px;
+    max-width: 400px;
+    font-family: 'Visby cf h';
+    font-size: 50px;
+    line-height: 62px;
+    color: #170033;
+}
+.price_title-grad{
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.price_subtitle{
+    margin-top: 15px;
+    max-width: 400px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+}
+.price_icon1{
+    margin-top: 25px;
+}
+.price_point1{
+    max-width: 400px;
+    font-family: 'Visby cf h';
+    font-size: 28px;
+    line-height: 35px;
+    color: #170033;
+}
+.price_point1-sub{
+    margin-top: 10px;
+    margin-left: 37px;
+    max-width: 363px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+}
+.price_boxinfo1{
+    background: url(../img/popularplan.png);
+    width: 430px;
+    height: 628px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.price_boxinfo2{
+    background: url(../img/premiumplan.png);
+    width: 430px;
+    height: 628px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.price_boxinfo1-h2{
+    max-width: 182px;
+    padding-top: 45px;
+    margin-left: 45px;
+    padding-bottom: 28px;
+    font-family: 'Visby cf l';
+    font-size: 28px;
+    color: #170033;
+}
+.price_boxinfo1-h1{
+    max-width: 148px;
+    margin-left: 45px;
+    padding-bottom: 33px;
+    font-family: 'Visby cf h';
+    font-size: 48px;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.miniprice-img{
+    margin-left: 45px;
+    margin-right: 10px;
+}
+.price_boxinfo1-p{
+    max-width: 285px;
+    padding-top: 15px;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+.button_price{
+    margin-top: 55px;
+    margin-left: 45px;
+    background: linear-gradient(to right, #8A35F2, #BC4BDF);
+    color: white;
+    border: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 106px;
+    padding-left: 106px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Visby cf h';
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.button_price:hover{
+    opacity: 0.75;
+}
+/* price style end*/
+
+/* review style start*/
+.review_cont{
+    margin-top: 210px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.review_welcome{
+    margin-top: 111px;
+    max-width: 125px;
+    font-family: 'Visby cf h';
+    font-size: 20px;
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.review_title{
+    max-width: 600px;
+    margin-top: 10px;
+    font-family: 'Visby cf h';
+    font-size: 50px;
+    color: #170033;
+}
+.review_title-grad{
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.review_img1{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.review_img2{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.review_subtitle{
+    max-width: 600px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #170033;
+}
+.review_h2{
+    margin-top: 30px;
+    max-width: 225px;
+    font-family: 'Visby cf h';
+    font-size: 26px;
+    color: #170033;
+}
+.review_left{
+   margin-right: 15px; 
+}
+.review_left:hover{
+    opacity: 0.75;
+}
+.review_right:hover{
+    opacity: 0.75;
+}
+.butt_review{
+    margin-top: 35px;
+}
+/* review style end*/
+
+/* footer style start*/
+.footer{
+    height: 463px;
+    width: 100%;
+    background-color: #170033;
+}
+.footer_cont{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 88px;
+}
+.footer_box1{
+    margin-top: 80px;
+}
+.footer_box1-h1{
+    max-width: 200px;
+    font-family: 'Visby cf h';
+    font-size: 42px;
+    color: white;
+}
+.footer_box1-h1-grad{
+    background: linear-gradient(90deg, #8A35F2 0%, #BC4BDF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer_box1-p{
+    margin-top: 20px;
+    max-width: 352px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+.footer_cont-soc{
+    margin-top: 30px;
+
+}
+.footer_fb{
+    margin-right: 15px;
+}
+.footer_fb:hover{
+    opacity: 0.75;
+}
+.footer_fb:last-child{
+    border: 0;
+}
+.footer_box2-h1{
+    margin-top: 80px;
+    
+    font-family: 'Visby cf h';
+    font-size: 22px;
+    color: white;
+}
+.footer_line1{
+    margin-top: 20px;
+}
+.footer_link{
+    max-width: 130px;
+    font-family: 'Poppins';    
+    font-size: 16px;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+}
+.footer_list{
+    margin-top: 25px;
+    max-width: 130px;
+}
+.footer_item{
+    margin-bottom: 12px;
+}
+.footer_item:last-child{
+    margin: 0;
+}
+.footer_link:hover{
+    opacity: 0.75;
+}
+.footer_box2{
+    max-width: 130px;
+    margin: 0;
+}
+.footer_box3{
+    margin-top: 80px;
+}
+.footer_box3-h1{
+    font-family: 'Visby cf h';
+    font-size: 22px;
+    color: white;
+}
+.footer_imgs{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+.footer_imgs-box1{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.footer_imgs-box2{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.footer_box4-p{
+    margin-top: 20px;
+    max-width: 352px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+.footer_email-cont{
+    width: 340px;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 28px;  
+}
+.footer_email-field{
+    width: 165px;
+    opacity: none;
+    margin-top: 17px;
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Visby cf l';
+    font-size: 14px;
+    line-height: 22px;
+    color: #a65cff;
+}
+.footer_email-but{
+    margin-left: 14px;
+    background: linear-gradient(to right, #8A35F2, #BC4BDF);
+    color: white;
+    border: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Visby cf h';
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.footer_email-but:hover{
+    opacity: 0.75;
+}
+.footer_email-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+/*footer style end*/
